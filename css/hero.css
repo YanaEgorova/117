@@ -1,0 +1,50 @@
+
+.hero {
+  padding: 20rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+   .title {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 2;
+    font-size: 6rem;
+    color: transparent;
+    -webkit-text-stroke: .3rem var(--sub-text-color);
+    text-stroke: .3rem var(--sub-text-color);
+    text-shadow: none;
+   }
+   .img-block {
+     position: relative;
+     margin-bottom: 5rem;
+   }
+   .img-block .img {
+    position: relative;
+    z-index: 1;
+  }
+   .img-block::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    content: attr(data-text);
+    font-size: 6rem;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--main-text-color);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 8rem;
+   }
+   .img-block::after {
+    font-size: 8rem;
+  }
+}

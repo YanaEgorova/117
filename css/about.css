@@ -1,0 +1,23 @@
+.about__wrapper {
+  background-image: url('../img/img2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about {
+  padding: 5rem 0;
+}
+.about .text {
+  max-width: 35rem;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 15rem 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 30rem 0;
+  }
+}

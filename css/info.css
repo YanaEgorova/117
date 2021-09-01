@@ -1,0 +1,9 @@
+.info {
+  padding: 5rem 0;
+}
+.info .video {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+   
+}

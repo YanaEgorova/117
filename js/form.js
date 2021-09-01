@@ -21,8 +21,8 @@ const defaultText = topPriceParagraph.textContent;
 
 const bottomQuantity = document.querySelector('.js_bottom-quantity');
 const bottomName = document.querySelector('.js_bottom-name');
-const PRODUCT_NAME_SINGULAR = 'bottle of Muscle Suplements';
-const PRODUCT_NAME_PLURAL = 'bottles of Muscle Suplements';
+const PRODUCT_NAME_SINGULAR = 'pair of Headphones';
+const PRODUCT_NAME_PLURAL = 'pairs of Headphones';
 
 const amountOfProduct = 12;
 const additionalProductPrice = 5.95;

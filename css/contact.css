@@ -4,6 +4,9 @@
 .contacts-pd {
     padding: 10rem 0;
 }
+.contacts-pd .text {
+   max-width: 100%;
+}
 .contact__wrapper .text {
     margin-left: 0;
     max-width: 100%;

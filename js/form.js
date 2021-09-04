@@ -20,9 +20,7 @@ const nextQuantityBtn = document.querySelector('.js_quantity_next');
 const defaultText = topPriceParagraph.textContent;
 
 const bottomQuantity = document.querySelector('.js_bottom-quantity');
-const bottomName = document.querySelector('.js_bottom-name');
-const PRODUCT_NAME_SINGULAR = 'pair of Headphones';
-const PRODUCT_NAME_PLURAL = 'pairs of Headphones';
+
 
 const amountOfProduct = 12;
 const additionalProductPrice = 5.95;
@@ -120,19 +118,11 @@ function changeQuantity(e) {
     if(e.target) {
         quantity = Number(e.target.value);
         bottomQuantity.textContent = Number(e.target.value);
-        if(Number(e.target.value) === 1) {
-            bottomName.textContent = PRODUCT_NAME_SINGULAR;
-        } else {
-            bottomName.textContent = PRODUCT_NAME_PLURAL;
-        }
+      
     } else {
         quantity = Number(e);
         bottomQuantity.textContent = Number(e);
-        if(Number(e) === 1) {
-            bottomName.textContent = PRODUCT_NAME_SINGULAR;
-        } else {
-            bottomName.textContent = PRODUCT_NAME_PLURAL;
-        }
+     
     }
     enterMoreThanThereIs(quantity);
     setTopTitle(quantity);

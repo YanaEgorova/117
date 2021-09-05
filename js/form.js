@@ -75,10 +75,10 @@ function chackedAdditionalInput(e) {
         totalBlock.style.display = 'flex';
         submitBtn.style.display = 'block';
         terms.style.display = 'flex';
-        total.textContent = `$ ${additionalProductPrice}`;
+        total.textContent = `$ ${additionalProductPrice.toFixed(2)}`;
         bottomHeadphonesPrice.style.display = 'none';
         bottomAdditionalPrice.style.display = 'inline-block';
-        bottomTotalPrice.textContent = `$ ${additionalProductPrice}`;
+        bottomTotalPrice.textContent = `$ ${additionalProductPrice.toFixed(2)}`;
     } else if (!checked && quantity === 0) {
         additionalBlock.style.display = 'none';
         topBlock.style.display = 'none';
@@ -93,10 +93,10 @@ function chackedAdditionalInput(e) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
-        bottomTotalPrice.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'inline-block';
     } else if(!checked && quantity > 0 && quantity <= amountOfProduct) {
         bottomHeadphonesPrice.style.display = 'inline-block';
@@ -106,10 +106,10 @@ function chackedAdditionalInput(e) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${priceAmount(quantity)}`;
-        bottomTotalPrice.textContent = `$ ${priceAmount(quantity)}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'none';
     }
 }
@@ -138,10 +138,10 @@ function showBottomBlocks(quantity) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
-        bottomTotalPrice.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'inline-block';
     } else if(!additionalInput.checked && quantity > 0 && quantity <= amountOfProduct) {
         bottomHeadphonesPrice.style.display = 'inline-block';
@@ -150,10 +150,10 @@ function showBottomBlocks(quantity) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${priceAmount(quantity)}`;
-        bottomTotalPrice.textContent = `$ ${priceAmount(quantity)}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'none';
     } else if(additionalInput.checked && quantity === 0) {
         bottomHeadphonesPrice.style.display = 'none';
